@@ -83,7 +83,6 @@ def run_eval_approach(indir, outdir, sys):
 					if 'posterior' in norm:
 						norms += ['Posterior']
 
-			mcn = str(int(fname.split('_')[0]))
 			fxt = apply_rules(norms)
 			spamwriter.writerow([fname, fxt[0]])
 
@@ -196,11 +195,6 @@ def run_eval_fixation(indir, outdir, sys):
 		spamwriter = csv.writer(csvfile, delimiter='|')
 		for d in l:
 			fname = d.split(deli)[-1]
-			mcn = str(int(fname.split('_')[0]))
-
-			# if mcn != '3875100':
-			# 	continue
-
 
 			isDirectCemented = False
 			isDirectHybrid = False
