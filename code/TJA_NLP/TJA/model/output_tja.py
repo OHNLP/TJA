@@ -1,6 +1,6 @@
-# * ESPRESSO SBI Pt-level output
-# * Process neuroimaging reports to classify a patient's SBI and WMD status
-# * @author Sunyang Fu
+# * TJA Doc-level output
+# * TJA NLP System Process operative reports to classify a patient's status of approach, fixation and bearing surface
+# * @author Sunyang Fu, Sunghwan Sohn, Hilal Maradit Kremers, Walter Kremers, Ahmad Pahlavan Tafti, Elham Sagheb Hossein Pour, Cody Wyles, Meagan Tibbo, David Lewallen, Daniel Berry
  
 import csv
 import sys
@@ -180,10 +180,6 @@ def run_eval_bearing(indir, outdir, sys):
 			spamwriter.writerow([fname, fxt])
 
 def run_eval_fixation(indir, outdir, sys):
-	gold = read_file_dict('/Users/m176320/Downloads/gold.csv', 4, 0, ',')
-	# for m in gold:
-	# 	print (m, gold[m])
-
 	if sys == '0':
 		deli = '/'
 	else:
@@ -195,7 +191,6 @@ def run_eval_fixation(indir, outdir, sys):
 		spamwriter = csv.writer(csvfile, delimiter='|')
 		for d in l:
 			fname = d.split(deli)[-1]
-
 			isDirectCemented = False
 			isDirectHybrid = False
 			isDirectRHybrid = False
@@ -211,24 +206,18 @@ def run_eval_fixation(indir, outdir, sys):
 			isCement = False
 			isLiner = False
 			sentIntShell, sentIntStem, sentIntNoShell, sentIntNoStem, sentIntCement = [],[],[],[],[]
-
 			ann_list = read_file_list(d,'\t')
-
 			for row in ann_list:
 				certainty = row[6]
 				status = row[7]
 				exp = row[8]
 				norm = row[9]
-
-
 				if len(row) == 11:
 					continue
 				try:
 					sentid = int(row[12].split(':')[-1].replace('"', ''))
 				except:
 					sentid = -1
-
-
 				if ('Positive' in certainty or 'Possible' in certainty) and 'Present' in status and 'Patient' in exp:
 					#Direct
 					if 'di_cement' in norm:
@@ -335,8 +324,7 @@ def run_eval_fixation(indir, outdir, sys):
 					fxt = "UNCEMENTED"
 				# else:
 				# 	print("NO fixation Check:" 
-				# 			+ mcn + DELIM + date)
-			# print (fname, fxt, gold[mcn])
+				# 			 + DELIM + date)
 			spamwriter.writerow([fname, fxt])
 
 def main():
