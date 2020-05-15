@@ -52,6 +52,15 @@ def apply_rules(k):
         if myMap[n] > maximum[1]: maximum = (n,myMap[n])
     return maximum
 
+def negation_exclusion(sent):
+	sent = sent.split('"')[1]
+	tokens = sent.lower().split(' ')
+	for t in tokens:
+		if "no:" == t:
+			return True
+	return False
+
+
 def run_eval_approach(indir, outdir, sys):
 	if sys == '0':
 		deli = '/'
@@ -74,6 +83,12 @@ def run_eval_approach(indir, outdir, sys):
 				status = row[7]
 				exp = row[8]
 				norm = row[9]
+				sent = row[-1]
+				isExl = False
+				if 'Negated' in certainty:
+					isExl = negation_exclusion(sent)
+				if isExl:
+					certainty = 'Possible'
 				if ('Positive' in certainty or 'Possible' in certainty) and 'Present' in status and 'Patient' in exp:
 					#Direct
 					if 'anterolateral' in norm:
@@ -98,7 +113,7 @@ def run_eval_bearing(indir, outdir, sys):
 		spamwriter = csv.writer(csvfile, delimiter='|')
 		for d in l:
 			fname = d.split(deli)[-1]
-
+			fxt = ''
 			isDirectMetalonPoly = False
 			isDirectCeramiconPoly = False
 			isDirectMetalonMetal = False
@@ -108,6 +123,7 @@ def run_eval_bearing(indir, outdir, sys):
 			isCeramic = False
 			isPolybrand = False
 			isHead = False
+			metalCounter, ceramicCounter = 0, 0
 
 			ann_list = read_file_list(d,'\t')
 
@@ -118,6 +134,12 @@ def run_eval_bearing(indir, outdir, sys):
 				status = row[7]
 				exp = row[8]
 				norm = row[9]
+				sent = row[-1]
+				isExl = False
+				if 'Negated' in certainty:
+					isExl = negation_exclusion(sent)
+				if isExl:
+					certainty = 'Possible'				
 				if ('Positive' in certainty or 'Possible' in certainty) and 'Present' in status and 'Patient' in exp:
 					#Direct
 					if 'di_meta-on-poly' in norm:
@@ -133,8 +155,10 @@ def run_eval_bearing(indir, outdir, sys):
 						isPoly = True
 					if 'indi_metal' in norm:
 						isMetal = True
+						metalCounter += 1
 					if 'indi_ceramic' in norm:
 						isCeramic = True
+						ceramicCounter += 1
 					if 'indi_poly_brand' in norm:
 						isPolybrand = True
 					if 'indi_head' in norm:
@@ -148,24 +172,26 @@ def run_eval_bearing(indir, outdir, sys):
 			elif isDirectCeramiconPoly:
 				fxt = "DirectCeramiconPoly"
 			elif isPoly:
-				if (isMetal and ~isCeramic):
+				if (isMetal and not isCeramic):
 					fxt = "InDirectMetalonPoly"
-				elif (~isMetal and isCeramic):
+				elif (not isMetal and isCeramic):
+					fxt = "InDirectCeramiconPoly"
+				elif (ceramicCounter>=2 and (ceramicCounter-metalCounter)>=1):
 					fxt = "InDirectCeramiconPoly"
 				elif (isMetal and isCeramic):
 					fxt = "InDirectMetalonPoly"
-				elif (~isMetal and ~isCeramic and isHead):
+				elif (not isMetal and not isCeramic and isHead):
 					fxt = "InDirectMetalonPoly"
 				else: 
 					fxt = "InDirectMetalonPoly"
 			elif isPolybrand:
-				if (isMetal and ~isCeramic):
+				if (isMetal and not isCeramic):
 					fxt = "InDirectMetalonPoly"
-				elif (~isMetal and isCeramic):
+				elif (not isMetal and isCeramic):
 					fxt = "InDirectCeramiconPoly"
 				elif (isMetal and isCeramic):
 					fxt = "InDirectMetalonPoly"
-				elif (~isMetal and ~isCeramic and isHead):
+				elif (not isMetal and not isCeramic and isHead):
 					fxt = "InDirectMetalonPoly"
 				else: 
 					fxt = "InDirectMetalonPoly"		
@@ -175,8 +201,8 @@ def run_eval_bearing(indir, outdir, sys):
 				fxt = "InDirectCeramiconCeramic"
 			elif isHead:
 				fxt = "InDirectMetalonPoly"
-			else:
-				fxt = "InDirectMetalonPoly"
+			# else:
+			# 	fxt = "InDirectMetalonPoly"
 			spamwriter.writerow([fname, fxt])
 
 def run_eval_fixation(indir, outdir, sys):
@@ -212,6 +238,12 @@ def run_eval_fixation(indir, outdir, sys):
 				status = row[7]
 				exp = row[8]
 				norm = row[9]
+				sent = row[-1]
+				isExl = False
+				if 'Negated' in certainty:
+					isExl = negation_exclusion(sent)
+				if isExl:
+					certainty = 'Possible'				
 				if len(row) == 11:
 					continue
 				try:
@@ -265,7 +297,7 @@ def run_eval_fixation(indir, outdir, sys):
 				isRHybrid = False
 
 
-			if((isNegShell or ~isShell) and (isNegStem or ~isStem)):
+			if((isNegShell or not isShell) and (isNegStem or not isStem)):
 				isUnCemented = True
 			
 			if(isHybrid and isRHybrid):
@@ -273,7 +305,7 @@ def run_eval_fixation(indir, outdir, sys):
 				isHybrid = False
 				isRHybrid = False
 			
-			if(~isHybrid and  ~isRHybrid and  ~isCemented):
+			if(not isHybrid and  not isRHybrid and  not isCemented):
 				isUnCemented = True
 			
 			if (isRHybrid and isCement):

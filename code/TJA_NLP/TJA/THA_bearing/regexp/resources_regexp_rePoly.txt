@@ -8,3 +8,7 @@ highly crosslinked poly ethylene
 ply
 liner
 insert
+xlpe
+a.+class (\S?\s?){0,3}procotyl
+e.+Class (\S?\s?){0,3}procotyl
+a.+class (\S?\s?){0,3}dynasty
