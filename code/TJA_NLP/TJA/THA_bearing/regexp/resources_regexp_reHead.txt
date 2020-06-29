@@ -21,3 +21,4 @@ ceramic, .?2.5.?mm head
 delta ceramic head
 name: biolox.?delta head
 name: biolox.?femoral head
+articuleze Head

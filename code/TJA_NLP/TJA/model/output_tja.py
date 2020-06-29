@@ -56,7 +56,7 @@ def negation_exclusion(sent):
 	sent = sent.split('"')[1]
 	tokens = sent.lower().split(' ')
 	for t in tokens:
-		if "no:" == t:
+		if "no:" == t or "no." == t:
 			return True
 	return False
 

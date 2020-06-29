@@ -12,3 +12,5 @@ xlpe
 a.+class (\S?\s?){0,3}procotyl
 e.+Class (\S?\s?){0,3}procotyl
 a.+class (\S?\s?){0,3}dynasty
+a-class flat
+a.+lass flat
