@@ -18,7 +18,11 @@ RULES_DIR: full directory path of 'TKA' folder
  Input file preprocessing: replace all '/n' to '. '
 
 ## RUN:
- command line:
+
+ 1. Download MedTagger: https://github.com/OHNLP/TJA/tree/master/nlp_system 
+ 2. Move the .jar file to the TKA_NLP folder
+ 3. Edit the configuration .sh file
+ 3. command line:
  ```
  ./runMedTagger-fit-tka.sh
 ```
