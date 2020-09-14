@@ -1,0 +1,7 @@
+./rules/resources_rules_matchrules.txt
+./regexp/resources_regexp_rePS.txt
+./regexp/resources_regexp_reCR.txt
+./regexp/resources_regexp_reCCK.txt
+./regexp/resources_regexp_reUC.txt
+./regexp/resources_regexp_reMC.txt
+./regexp/resources_regexp_rePoly.txt

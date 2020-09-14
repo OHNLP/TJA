@@ -1,0 +1,3 @@
+./rules/resources_rules_matchrules.txt
+./regexp/resources_regexp_reModelNumber.txt
+./regexp/resources_regexp_reModelNumber2.txt

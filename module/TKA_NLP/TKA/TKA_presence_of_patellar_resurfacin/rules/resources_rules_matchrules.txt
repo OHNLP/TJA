@@ -1,0 +1,13 @@
+RULENAME="cm_rePatella",REGEXP="\b(%rePatella)\b",LOCATION="NA",NORM="Patella"
+RULENAME="cm_rePatella2",REGEXP="\b(%rePatellaTerms)\b",LOCATION="NA",NORM="Patella_terms"
+RULENAME="cm_rePatella3",REGEXP="\bwithout(\s+)(%rePatella)(\s+)resurfac(\w+)\b",LOCATION="NA",NORM="Without_Patella_Resurface"
+RULENAME="cm_rePatella4",REGEXP="\bunresurfaced(\s+)(%rePatella)\b",LOCATION="NA",NORM="Without_Patella_Resurface"
+RULENAME="cm_rePatella5",REGEXP="\b(%rePatella)(\s+)unresurfaced\b",LOCATION="NA",NORM="Without_Patella_Resurface"
+RULENAME="cm_reSurgeryDate",REGEXP="\b(%reSurgeryDate)\b",LOCATION="NA",NORM="Surgery_Date"
+
+
+
+// Remove
+RULENAME="rem_01",REGEXP="\bpatella(\s+)(was|were)(\s+)not(\s+)(.*)\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_02",REGEXP="\b(.*) not to resurface(\s+)(%rePatella)\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_03",REGEXP="\b(.*) not to resurface\b",LOCATION="NA",NORM="REMOVE"

@@ -1,0 +1,10 @@
+// CR
+cr
+c/r
+cruciate.{1,5}(\s+)?retaining
+fixed bearing(.*)insert
+pcl retained
+posterior cruciate was intact and retained
+cruciate-(\s+)?retaining(\s+)?femoral(\s+)?component
+cruc ret
+

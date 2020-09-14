@@ -1,0 +1,6 @@
+./rules/resources_rules_matchrules.txt
+./regexp/resources_regexp_reDiagLeft.txt
+./regexp/resources_regexp_reDiagRight.txt
+./regexp/resources_regexp_reDiagBoth.txt
+
+

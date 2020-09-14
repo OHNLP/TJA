@@ -1,0 +1,4 @@
+./rules/resources_rules_matchrules.txt
+./regexp/resources_regexp_rePatella.txt
+./regexp/resources_regexp_rePatellaTerms.txt
+./regexp/resources_regexp_reSurgeryDate.txt

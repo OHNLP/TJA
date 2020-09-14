@@ -1,0 +1,14 @@
+// patella
+(round|oval)(.*)patellar?(\S+)?
+patellar?(\S+)?(.*) (round|oval|dome)
+patellar? (was|were)(\s+)(\S+\s+){0,3}prepared
+patellar? (were|was)(\s+)(\S+\s+){0,3}cemented
+patellar? component
+surface(.*)of(.*) patellar?(.*) removed
+patellar?(.*) surface(.*) osteotomized
+patellar?(\s+)?(\S+\s+){0,10}(\S+)? resurfac(\w+)?
+patella was(\s+)(\S+\s+){0,3}cut
+patellar button
+patellar?(\s+)?(\S+\s+){0,5}ream(\w+)?
+(\S+)-patella(r)?
+postresurfacing

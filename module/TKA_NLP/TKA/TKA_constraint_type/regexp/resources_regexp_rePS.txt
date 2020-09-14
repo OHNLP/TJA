@@ -1,0 +1,28 @@
+// PS
+ps
+p/s
+stabilized.{1,2}(\s+)?posterior
+posterior.{1,2}(\s+)?stabilized
+posterior{1,2}(\s+)?stabilized
+posterior cruciate was excised
+
+
+posterior cruciate.{1,2}(\s+)?substit(\w+)?
+poly stab
+post stab
+pcl sacrifice(\w+)?
+cruciate substitut(\w+)?
+box(.{0,20})cuts?
+post cruciate.{0,5}substituting
+pcl (.*)\bexcised
+cruciate ligaments?(.*)excised
+cruciate ligaments?(.*)removed
+cruciate ligaments? (were|was) excised
+posterior stabilized(.{0,15}) insert 
+posterior cruciate.{0,20}excis(\w+)?
+acl, pcl(.*) excised
+rotating platform
+tib insert (.*)stab
+tib ins (.*)stab
+
+

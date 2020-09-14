@@ -1,0 +1,22 @@
+RULENAME="cm_reModelNumber",REGEXP="(%reModelNumber)",LOCATION="NA",NORM="Model_Number"
+RULENAME="cm_reModelNumber2",REGEXP="\b(%reModelNumber2)\b",LOCATION="NA",NORM="Model_Number"
+
+
+
+// Remove
+RULENAME="rem_01",REGEXP="(.*),(\s+)catalog.{1,1}model\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_02",REGEXP="(\s+|#)\d+\s{0,5},\s{0,5}\d",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_10",REGEXP="\b\d+\s{0,8},\s{0,5}\d",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_03",REGEXP="\b\d+:",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_04",REGEXP="\bmd\s+(.*)\(\d+\)",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_05",REGEXP="\b(%reModelNumber2)(\s+)\d+(\s+)(f|m)\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_06",REGEXP=" 2-\d\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_07",REGEXP=" 3-\d\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_08",REGEXP=" 4-\d\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_09",REGEXP="\(\d+\)",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_11",REGEXP="(\s+)?#?(2)\d\d\d\d\d;?,?",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_12",REGEXP="(\s+)?#?(3)\d\d\d\d\d;?,?",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_13",REGEXP="\b(lt|lot).{0,15}\d+(,|;)?",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_14",REGEXP="(\s+)2\d\d\d\d\d;",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_15",REGEXP="(2)\d\d\d\d\d\b",LOCATION="NA",NORM="REMOVE"
+RULENAME="rem_16",REGEXP="(\s+)3\d\d\d\d\d,?",LOCATION="NA",NORM="REMOVE"

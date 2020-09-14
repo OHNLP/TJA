@@ -1,0 +1,15 @@
+// both
+both(\s+)?(\w+\s+){0,10}knees
+bilateral(\s+)?(\w+\s+){0,10}knee(s)?
+left(\s+)?and(\s+)?right(\s+)?knees
+right(\s+)?and(\s+)?left(\s+)?knees
+bilateral(\s+)?gonarthrosis
+bilateral(.*)?arthroplast(\w+)?
+bilateral(\s+)?knees?
+right(\s+)?(\w+\s+){0,10}knees
+left(\s+)?(\w+\s+){0,10}knees
+bilateral(\s+)?(\w+\s+){0,10}posterior-stabilized
+bilateral(\s+)?(\w+\s+){0,10}posterior(\S+)?
+posterior(\S+)?(\s+)?(\w+\s+){0,10}bilateral
+
+

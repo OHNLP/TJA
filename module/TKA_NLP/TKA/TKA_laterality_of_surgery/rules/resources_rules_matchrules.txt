@@ -1,0 +1,4 @@
+RULENAME="cm_reDiagLeft",REGEXP="\b(%reDiagLeft)\b",LOCATION="NA",NORM="LEFT"
+RULENAME="cm_reDiagRight",REGEXP="\b(%reDiagRight)\b",LOCATION="NA",NORM="RIGHT"
+RULENAME="cm_reDiagBoth",REGEXP="\b(%reDiagBoth)\b",LOCATION="NA",NORM="BOTH"
+

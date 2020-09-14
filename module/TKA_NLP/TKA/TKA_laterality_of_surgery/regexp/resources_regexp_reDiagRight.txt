@@ -1,0 +1,8 @@
+// right
+right(\s+)?(\w+\s+){0,10}knee
+right(\s+)?(\w+\s+){0,10}gonarthrosis
+right(\s+)?(\w+\s+){0,10}arthroplasty(.*)?
+r leg
+right leg
+right(\s+)?(\w+\s+){0,10}posterior(\S+)?
+posterior(\S+)?(\s+)?(\w+\s+){0,10}right
