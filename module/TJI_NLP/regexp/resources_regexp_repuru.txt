@@ -1,0 +1,21 @@
+purulence
+purulent
+purulently
+cloudy serous fluid
+serosanguineous fluid
+purulent-appearing
+greenish fluid
+draining cloudy [\S+\s+]{0,3}fluid
+cloudy fluid
+abscess drained
+abscessed drained
+abscesses drained
+drain abscesses
+drained abscess
+drained abscesses
+draining abscesses
+turbid fluid
+yellowish fluid
+infected fluid collection
+cloudy looking fluid
+brown.+yellow discharge
