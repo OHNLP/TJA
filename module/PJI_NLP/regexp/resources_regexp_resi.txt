@@ -1,0 +1,21 @@
+sinu tract
+sinus tract
+sinus tracts
+sinus track
+draining sinus
+fistulization tract
+fistulizing tract
+fistulous tract
+fistulous tracts
+sinus drain
+sinus draining
+sinus-draining
+sinus drainage
+draining chronic sinus
+regex:sinus (\S+\s+){0,5}(tract|tracts)
+regex:sinus (\S+\s+){0,5}draining
+regex:fascia (\S+\s+){0,8}found|(visibly disrupted)
+regex:large fluid (\S+\s+){0,8}tracked
+regex:draining (\S+\s+){0,5}sinus
+regex:(deep|deeply|deeper|all the way)(\S+\s+){0,5}(tracking|tracked|communicate|communicated|leaking|leaked|extension|coming from)(\S+\s+){0,5}(fascia|fluid|sinus tract)
+(fascia|fluid|sinus tract)(\S+\s+){0,5}(deep|deeply|deeper|all the way)(\S+\s+){0,5}(tracking|tracked|communicate|communicated|leaking|leaked|extension|coming from)

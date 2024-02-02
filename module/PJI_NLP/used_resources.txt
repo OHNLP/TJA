@@ -1,0 +1,8 @@
+./.DS_Store
+./context/contextRule.txt
+./posthoc_settings.json
+./regexp/resources_regexp_recom.txt
+./regexp/resources_regexp_rejoint.txt
+./regexp/resources_regexp_repuru.txt
+./regexp/resources_regexp_resi.txt
+./rules/resources_rules_matchrules.txt

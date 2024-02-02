@@ -1,0 +1,10 @@
+calf
+joint
+deep
+tissue
+periprosthetic
+fracture
+hip
+knee
+femur
+arthroplasty
