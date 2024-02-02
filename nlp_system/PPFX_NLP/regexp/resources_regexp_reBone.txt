@@ -1,6 +1,0 @@
-bone.*poor
-bone.*osteopenic
-bone.*osteoporosis
-bone.*osteoporotic
-bone.*osteopenia
-bone.*loss

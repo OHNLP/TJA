@@ -1,6 +1,0 @@
-vancouver b1
-vancouver.*b1
-vancouver b1 type
-vancouver b type 1
-vancouver b-1
-vancouver 1b

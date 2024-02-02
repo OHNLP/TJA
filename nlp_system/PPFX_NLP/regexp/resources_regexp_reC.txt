@@ -1,7 +1,0 @@
-vancouver c
-vancouver c type
-vancouver type c
-vancouver c
-interprosthetic
-distal.*fixed
-Spinal
