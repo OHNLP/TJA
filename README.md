@@ -1,11 +1,6 @@
 # TJA
 NLP Algorithms for Total Joint Arthroplasty
 
-# Publications:
-https://pubmed.ncbi.nlm.nih.gov/31416741/
-https://pubmed.ncbi.nlm.nih.gov/31567670/
-https://pubmed.ncbi.nlm.nih.gov/33051119/
-
 ## THA NLP System
 Process operative reports to classify a patient's status of approach, fixation and bearing surface
 @author Sunyang Fu, Sunghwan Sohn, Hilal Maradit Kremers, Walter Kremers, Ahmad Pahlavan Tafti, Elham Sagheb Hossein Pour, Cody Wyles, Meagan Tibbo, David Lewallen, Daniel Berry
@@ -44,3 +39,9 @@ information extraction based on patterns, and MedTaggerML for machine learning-b
     run_medtagger_unix_mac.sh
     ```
     
+# Publications
+https://pubmed.ncbi.nlm.nih.gov/31416741/
+
+https://pubmed.ncbi.nlm.nih.gov/31567670/
+
+https://pubmed.ncbi.nlm.nih.gov/33051119/
