@@ -1,0 +1,13 @@
+RULENAME="cm_ag1",REGEXP="\b(%reAG)\b",LOCATION="NA",NORM="AG"
+//RULENAME="cm_ag2",REGEXP="\b(greater (\S+\s+){0,5}trochanter)\b",LOCATION="NA",NORM="AG"
+RULENAME="cm_al1",REGEXP="\b(%reAL)\b",LOCATION="NA",NORM="AL"
+
+RULENAME="cm_b11",REGEXP="\b(%reB1)\b",LOCATION="NA",NORM="B1"
+RULENAME="cm_b21",REGEXP="\b(%reB2)\b",LOCATION="NA",NORM="B2"
+RULENAME="cm_b31",REGEXP="\b(%reB3)\b",LOCATION="NA",NORM="B3"
+RULENAME="cm_c1",REGEXP="\b(%reC)\b",LOCATION="NA",NORM="C"
+
+//RULENAME="cm_b11",REGEXP="\b(stem (\S+\s+){0,5}(well(-| )fixed|secure|stable|solid|migrated|migration))\b",LOCATION="NA",NORM="B1"
+//RULENAME="cm_bone1",REGEXP="\b(%reBone)\b",LOCATION="NA",NORM="Bone"
+//RULENAME="cm_stem1",REGEXP="\b(%reStem)\b",LOCATION="NA",NORM="Stem"
+//RULENAME="b1_excl",REGEXP="\b no(t)? \b",LOCATION="NA",NORM="EXCLUSION_B1"

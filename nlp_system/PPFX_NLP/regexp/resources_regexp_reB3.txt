@@ -1,0 +1,5 @@
+vancouver.*b3
+vancouver 3b
+vancouver b3 type
+vancouver b type 3
+vancouver b-3
