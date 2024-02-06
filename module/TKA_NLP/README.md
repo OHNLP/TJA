@@ -31,4 +31,4 @@ RULES_DIR: full directory path of 'TKA' folder
  summary folder: document level finding
 
 ## REFERENCE: 
-Use of Natural Language Processing Algorithms to Identify Common Data Elements in Operative Notes for Knee Arthroplasty. JOA-D-20-01740
+Use of Natural Language Processing Algorithms to Identify Common Data Elements in Operative Notes for Knee Arthroplasty. JOA 2021 Mar;36(3):922-926.  doi: 10.1016/j.arth.2020.09.029.  
