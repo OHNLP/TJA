@@ -11,6 +11,16 @@ Process operative notes to extract five data elements: (1) category of surgery (
 @author Elham Sagheb, Sunyang Fu, Sunghwan Sohn, Walter Kremers, Ahmad P. Tafti, Taghi Ramazanian, Cody Wyles, Meagan Tibbo, David Lewallen, Daniel Berry, Hilal Maradit Kremers
 #### TKA module: https://github.com/OHNLP/TJA/tree/master/module/TKA_NLP
 
+## PJI NLP System
+Process operative notes to 
+@author  Sunyang Fu, Sunghwan Sohn, Walter Kremers,  Hilal Maradit Kremers
+#### PJI module: https://github.com/OHNLP/TJA/tree/master/module/PJI_NLP
+
+## PPFX NLP System
+Process operative notes to 
+@author  Sunyang Fu, Sunghwan Sohn, Walter Kremers,  Hilal Maradit Kremers
+#### PPFX module: https://github.com/OHNLP/TJA/tree/master/module/PPFX_NLP
+
 # MedTagger
 MedTagger contains a suite of programs that the Mayo Clinic NLP program has developed in 2013.
 It includes three major components: MedTagger for indexing based on dictionaries, MedTaggerIE for
