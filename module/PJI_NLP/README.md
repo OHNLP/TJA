@@ -1,10 +1,8 @@
-[![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) 
-
-# THA - Total Hip Arthroplasty
+# PJI - Periprosthetic Joint Infection
   
-## THA NLP System
-Process operative reports to classify a patient's status of approach, fixation and bearing surface
-@author Sunyang Fu, Sunghwan Sohn, Hilal Maradit Kremers, Walter Kremers, Ahmad Pahlavan Tafti, Elham Sagheb Hossein Pour, Cody Wyles, Meagan Tibbo, David Lewallen, Daniel Berry
+## PJI NLP System
+Process operative reports to automated detection of Periprosthetic Joint Infections and Data Elements Using Natural Language Processing.
+@author Fu S, Wyles CC, Osmon DR, Carvour ML, Sagheb E, Ramazanian T, Kremers WK, Lewallen DG, Berry DJ, Sohn S, Kremers HM
  
 ## CONFIGURATION:
 INPUT_DIR: full directory path of input folder
@@ -27,4 +25,4 @@ RULES_DIR: full directory path of 'TJA' folder
  summary folder: document level finding
 
 ## REFERENCE: 
-Wyles CC, Tibbo ME, Fu S, Wang Y, Sohn S, Kremers WK, Berry DJ, Lewallen DG, Maradit-Kremers H. Use of Natural Language Processing Algorithms to Identify Common Data Elements in Operative Notes for Total Hip Arthroplasty. JBJS. 2019 Nov 6;101(21):1931-8.
+Fu S, Wyles CC, Osmon DR, Carvour ML, Sagheb E, Ramazanian T, Kremers WK, Lewallen DG, Berry DJ, Sohn S, Kremers HM. Automated Detection of Periprosthetic Joint Infections and Data Elements Using Natural Language Processing. J Arthroplasty. 2021 Feb;36(2):688-692. doi: 10.1016/j.arth.2020.07.076. Epub 2020 Aug 5. PMID: 32854996; PMCID: PMC7855617.
