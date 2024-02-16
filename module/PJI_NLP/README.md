@@ -6,9 +6,7 @@ Process consultation notes, operative notes, pathology reports, and microbiology
  
 ## CONFIGURATION:
 
-
 ## INPUT:
-
 
 ## RUN:
 
