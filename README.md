@@ -12,13 +12,13 @@ Process operative notes to extract five data elements: (1) category of surgery (
 #### TKA module: https://github.com/OHNLP/TJA/tree/master/module/TKA_NLP
 
 ## PJI NLP System
-Process operative notes to 
-@author  Sunyang Fu, Sunghwan Sohn, Walter Kremers,  Hilal Maradit Kremers
+Process operative reports to automated detection of Periprosthetic Joint Infections and Data Elements Using Natural Language Processing. 
+@author Fu S, Wyles CC, Osmon DR, Carvour ML, Sagheb E, Ramazanian T, Kremers WK, Lewallen DG, Berry DJ, Sohn S, Kremers HM
 #### PJI module: https://github.com/OHNLP/TJA/tree/master/module/PJI_NLP
 
 ## PPFX NLP System
-Process operative notes to 
-@author  Sunyang Fu, Sunghwan Sohn, Walter Kremers,  Hilal Maradit Kremers
+Process operative reports to identify periprosthetic femur fractures (PPFFx) followed by more complex Vancouver classification.                 
+@author Tibbo ME, Wyles CC, Fu S, Sohn S, Lewallen DG, Berry DJ, Maradit Kremers H.
 #### PPFX module: https://github.com/OHNLP/TJA/tree/master/module/PPFX_NLP
 
 # MedTagger
@@ -50,8 +50,11 @@ information extraction based on patterns, and MedTaggerML for machine learning-b
     ```
     
 # Publications
-https://pubmed.ncbi.nlm.nih.gov/31416741/
+THA NLP System:  https://pubmed.ncbi.nlm.nih.gov/31567670/
 
-https://pubmed.ncbi.nlm.nih.gov/31567670/
+TKA NLP System:  https://pubmed.ncbi.nlm.nih.gov/33051119/
 
-https://pubmed.ncbi.nlm.nih.gov/33051119/
+PJI NLP System:  https://pubmed.ncbi.nlm.nih.gov/32854996/
+
+PPFX NLP System: https://pubmed.ncbi.nlm.nih.gov/31416741/
+
