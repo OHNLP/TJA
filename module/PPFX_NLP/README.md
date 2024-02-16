@@ -26,5 +26,7 @@ RULES_DIR: full directory path of 'TJA' folder
  raw folder: concept level finding
  summary folder: document level finding
 
-## REFERENCE: 
+## REFERENCE:
+https://pubmed.ncbi.nlm.nih.gov/31416741/
+
 Tibbo ME, Wyles CC, Fu S, Sohn S, Lewallen DG, Berry DJ, Maradit Kremers H. Use of Natural Language Processing Tools to Identify and Classify Periprosthetic Femur Fractures. J Arthroplasty. 2019 Oct;34(10):2216-2219. doi: 10.1016/j.arth.2019.07.025. Epub 2019 Jul 24. PMID: 31416741; PMCID: PMC6760992.
