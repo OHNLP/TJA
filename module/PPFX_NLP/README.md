@@ -1,11 +1,11 @@
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger) 
 
-# THA - Total Hip Arthroplasty
+# PPFX - Periprosthetic Femur Fractures module
   
-## THA NLP System
-Process operative reports to classify a patient's status of approach, fixation and bearing surface
-@author Sunyang Fu, Sunghwan Sohn, Hilal Maradit Kremers, Walter Kremers, Ahmad Pahlavan Tafti, Elham Sagheb Hossein Pour, Cody Wyles, Meagan Tibbo, David Lewallen, Daniel Berry
- 
+## PPFX NLP System
+Process operative reports to identify periprosthetic femur fractures (PPFFx) followed by more complex Vancouver classification.
+@author Tibbo ME, Wyles CC, Fu S, Sohn S, Lewallen DG, Berry DJ, Maradit Kremers H.
+
 ## CONFIGURATION:
 INPUT_DIR: full directory path of input folder
 OUTPUT_DIR: full directory path of output folder
@@ -27,4 +27,4 @@ RULES_DIR: full directory path of 'TJA' folder
  summary folder: document level finding
 
 ## REFERENCE: 
-Wyles CC, Tibbo ME, Fu S, Wang Y, Sohn S, Kremers WK, Berry DJ, Lewallen DG, Maradit-Kremers H. Use of Natural Language Processing Algorithms to Identify Common Data Elements in Operative Notes for Total Hip Arthroplasty. JBJS. 2019 Nov 6;101(21):1931-8.
+Tibbo ME, Wyles CC, Fu S, Sohn S, Lewallen DG, Berry DJ, Maradit Kremers H. Use of Natural Language Processing Tools to Identify and Classify Periprosthetic Femur Fractures. J Arthroplasty. 2019 Oct;34(10):2216-2219. doi: 10.1016/j.arth.2019.07.025. Epub 2019 Jul 24. PMID: 31416741; PMCID: PMC6760992.
