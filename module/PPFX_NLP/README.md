@@ -7,24 +7,12 @@ Process operative reports to identify periprosthetic femur fractures (PPFFx) fol
 @author Tibbo ME, Wyles CC, Fu S, Sohn S, Lewallen DG, Berry DJ, Maradit Kremers H.
 
 ## CONFIGURATION:
-INPUT_DIR: full directory path of input folder
-OUTPUT_DIR: full directory path of output folder
-OUTPUT_SUMMARY_DIR: full directory path of output summary folder
-RULES_DIR: full directory path of 'TJA' folder
 
 ## INPUT:
- Input folder: the input folder contains a list of surgical reports 
- Input file: document level .txt file. The naming convention of each report would be unique identifier + surgery date. P.S. one patient may have multiple surgeries. 
- Input file preprocessing: replace all '/n' to '. '
 
 ## RUN:
- command line:
- ```
- ./runMedTagger-fit-tja.sh
-```
+
 ## OUTPUT:
- raw folder: concept level finding
- summary folder: document level finding
 
 ## REFERENCE:
 https://pubmed.ncbi.nlm.nih.gov/31416741/
