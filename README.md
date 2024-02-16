@@ -12,8 +12,8 @@ Process operative notes to extract five data elements: (1) category of surgery (
 #### TKA module: https://github.com/OHNLP/TJA/tree/master/module/TKA_NLP
 
 ## PJI NLP System
-Process operative reports to automated detection of Periprosthetic Joint Infections and Data Elements Using Natural Language Processing. 
-@author Fu S, Wyles CC, Osmon DR, Carvour ML, Sagheb E, Ramazanian T, Kremers WK, Lewallen DG, Berry DJ, Sohn S, Kremers HM
+Process consultation notes, operative notes, pathology reports, and microbiology reports to automated detection of Periprosthetic Joint Infections and Data Elements Using Natural Language Processing. 
+@author Fu S, Wyles CC, Osmon DR, Carvour ML, Sagheb E, Ramazanian T, Kremers WK, Lewallen DG, Berry DJ, Sohn S, Maradit Kremers H.
 #### PJI module: https://github.com/OHNLP/TJA/tree/master/module/PJI_NLP
 
 ## PPFX NLP System
