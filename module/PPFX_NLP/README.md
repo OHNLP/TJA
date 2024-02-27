@@ -6,14 +6,27 @@
 Process operative reports to identify periprosthetic femur fractures (PPFFx) followed by more complex Vancouver classification.
 @author Tibbo ME, Wyles CC, Fu S, Sohn S, Lewallen DG, Berry DJ, Maradit Kremers H.
 
-## CONFIGURATION:
+## Configuration and Run:
 
-## INPUT:
+1. Download the latest medtaagger release from https://github.com/OHNLP/TJA/tree/master/nlp_system 
+2. Move the .jar file to either PPFX_NLP folder
+3. Modify the `INPUTDIR`, `OUTPUTDIR`, and `RULEDIR` variables in `runMedTagger-fit-tja.sh` or `runMedTagger-fit-tka.sh`, as appropriate
+    - `INPUT_DIR`: full directory path of input folder 
+    - `OUTPUT_DIR`: full directory path of output folder
+    - `RULES_DIR`: full directory path of 'Rule' folder
+    
+    Example:
+    ```
+    INPUTDIR="$YOUR_INPUT_DIRECTORY"
+    OUTPUTDIR="$YOUR_OUTPUT_DIRECTORY"
+    RULEDIR="$YOUR_MEDTAGGER_HOME/medtaggerieresources/covid19"
+    ```
+    
+4. Run the batch file
 
-## RUN:
-
-## OUTPUT:
-
+    ```
+    run_medtagger_unix_mac.sh
+    ```
 ## REFERENCE:
 https://pubmed.ncbi.nlm.nih.gov/31416741/
 
