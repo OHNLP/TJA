@@ -28,7 +28,8 @@ You need to extract "Acute Inflammations" from pathology notes, "Sinus Tracts" f
     run_medtagger_unix_mac.sh
     ```
 2- Combine the extracted information from step 1 with microbiology lab results based on the algorithm in the below pictuer to obtain final PJI status.
-![" Process for extracting and classifying PJI status"](https://github.com/OHNLP/TJA/blob/master/module/PJI_NLP/nihms-1623200-f0001.jpg?raw=true)
+![Process for extracting and classifying PJI status](https://raw.githubusercontent.com/OHNLP/TJA/master/module/PJI_NLP/nihms-1623200-f0001.jpg)
+
 
 
 
