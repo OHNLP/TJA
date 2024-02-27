@@ -6,7 +6,7 @@ Process consultation notes, operative notes, pathology reports, and microbiology
  
 ## CONFIGURATION and Run:
 1- Extracting information from clinical notes:
-You need to extract "Acute Inflammations" from pathology notes, "Sinus Tracts" from clinical visit notes, and "Purulent Materials" from operative notes.
+You need to extract "Acute Inflammation" from pathology notes, "Sinus Tract" from clinical visit notes, and "Purulent Material" from operative notes.
 
 1-1. Download the latest medtaagger release from https://github.com/OHNLP/TJA/tree/master/nlp_system 
 1-2. Move the .jar file to either PPFX_NLP folder
@@ -27,7 +27,7 @@ You need to extract "Acute Inflammations" from pathology notes, "Sinus Tracts" f
     ```
     run_medtagger_unix_mac.sh
     ```
-2- Combine the extracted information from step 1 with microbiology lab results based on the algorithm in the below pictuer to obtain final PJI status.
+2- Combine the extracted information from step 1 with microbiology lab results based on the algorithm in the below figure to obtain final PJI status.
 ![Process for extracting and classifying PJI status](https://raw.githubusercontent.com/OHNLP/TJA/master/module/PJI_NLP/nihms-1623200-f0001.jpg)
 
 
